@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="assets/css/variables.css">
+  <link rel="stylesheet" href="assets/css/elements.css">
+  <link rel="stylesheet" href="assets/css/classes.css">
+  <link rel="stylesheet" href="assets/css/menu.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+
+  <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+  <label class="close-menu-label" for="close-menu" title="close menu"></label>
+  <aside class="menu white-bg">
+    <div class="main-content menu-content">
+      <h1 onclick="getElementById('close-menu').checked = false;">
+        <a href="#home">Isaac.</a>
+      </h1>
+
+      <nav>
+        <ul onclick="getElementById('close-menu').checked = false;">
+          <li><a href="#about">Sobre mim</a></li>
+          <li><a href="#skills">Habilidades</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a class="button" href="#contact">Contato</a></li>           
+        </ul>
+      </nav>
+    </div>
+  </aside>
+ 
+  <div class="menu-spacing"></div>
+
+  <section id="home" class="intro main-bg section">
+    <div class="main-content intro-content">
+      <div class="intro-text-content">
+        <h2>Olá, sou <br> 
+          <span>Isaac Silva</span>
+        </h2>
+        <p>Desenvolvedor FullStack (React & NodeJS)</p>
+        <div>
+          <button class="btn-linkedin">
+            <i class="fa-brands fa-linkedin"></i>
+            Linkedin
+          </button>
+          <button class="btn-github">
+            <i class="fa-brands fa-github"></i>
+            Github
+          </button>
+        </div>
+      </div>
+      <div class="intro-img">
+        <img src="assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="white-bg section">
+    <div class="main-content top3-content">
+      <h2>Sobre mim</h2>
+      <p>
+        Comecei na área de TI como suporte técnico em um provedor de internet do meu bairro, 
+        mas sempre fui apaixonado por programação, sempre tive vontade de desenvolver minhas próprias 
+        aplicações, essa paixão me motivou a largar minha faculdade de administração, que cursava 
+        na época, e iniciar no curso de Sistema de Informações.</p>
+      <p>Todos os dias venho me preparando para que possa me desenvolver profissionalmente e me tornar 
+        um profissional de excelência na área, hoje me sinto preparado para conquistar meu primeiro 
+        objetivo que é alcançar uma vaga de programador júnior.</p>
+    </div>
+  </section>
+
+
+  <section id="skills" class="grid-one main-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Habilidades</h2>
+      <p class="grid-description">Uma breve descrição sobre meus conhecimentos.</p>
+
+      <div class="grid">       
+          <article>
+            <div class="iconArea">
+              <img src="assets/img/nodejs-icon.svg" alt="Logo do nodejs.">
+            </div>
+            <p>
+              Express, sequelize/Prima, JWT, cors, multer, entre outros...
+            </p>
+          </article>
+          <article>
+            <div class="iconArea">
+              <img src="assets/img/reactjs-icon.svg" alt="Logo do React js.">
+            </div>
+            <p>
+              Axios, contextAPI, redux, persist, saga, react router dom V6, entre outros...
+            </p>
+          </article>
+          <article>
+            <div class="iconArea">
+              <img src="assets/img/typescriptlang-icon.svg" alt="Logo do typescript">
+            </div>
+            <p>
+              Utilizo o typescript pois proporciona a possibilidade de descobrir erros 
+              em tempo real.
+            </p>
+          </article>
+        
+          <article>
+            <div class="iconArea">
+              <img src="assets/img/mysql-official.svg" alt="Logo do mysql">
+            </div>
+            <p>
+              Tenho conhecimento em bancos de dados SQL e NoSQL, como MySQL, Postgres e MongoDB.
+            </p>
+          </article>
+          <article>
+            <div class="iconArea">
+              <img src="assets/img/github-tile.svg" alt="Logo do github">
+            </div>
+            <p>
+              Sempre utilizo o Github como uma forma simples de gerenciar meus projetos.
+            </p>
+          </article>
+          <article>
+            <div class="iconArea">
+              <img src="assets/img/docker-tile.svg" alt="Logo do docker">
+            </div>
+            <p>
+              lorem ipsum solarion
+            </p>
+          </article>
+        
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="grid-one white-bg section">
+    <div class="main-content grid-one-content">
+      <h2 class="grid-main-heading">Projetos</h2>
+      <p class="grid-description">Alguns projetos que já desenvolvir.</p>
+
+      <div class="grid-gallery">
+        <div class="gallery-img">
+            <p>em breve</p>
+        </div>
+        <div class="gallery-img">
+          <p>em breve</p>
+      </div>
+      <div class="gallery-img">
+        <p>em breve</p>
+    </div>        
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="intro main-bg section">
+    <div class="main-content intro-content contact-content">
+      <div class="intro-text-content">
+        <h2>Contato</h2>
+        <p>Obrigado</p>
+      </div>
+    </div>
+  </section>
+
+
+  <footer id="footer" class="footer white-bg">
+    <p>DESENVOLVIDO POR <a href="#">ISAAC SILVA</a></p>
+  </footer>
+
+  <a class="back-to-top" href="#">➤</a>
+</body>
+
+</html>
